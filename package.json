@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/plugin-graphql": "4.11.1",
     "@strapi/plugin-i18n": "4.11.1",
     "@strapi/plugin-users-permissions": "4.11.1",
     "@strapi/strapi": "4.11.1",
@@ -23,8 +24,7 @@
     "uuid": "f18e627a-cdc6-4581-8386-3a8b054d0c78"
   },
   "engines": {
-    "node": "<=14.x.x",
-    "npm": "<=6.x.x"
+    "node": ">=14.19.1 <=18.x.x"
   },
   "license": "MIT"
 }
