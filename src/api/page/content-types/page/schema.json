@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.seo-setting"
+    },
+    "menuItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.menu"
+    },
+    "sidebar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.sidebar"
+    },
+    "layoutOptions": {
+      "type": "enumeration",
+      "enum": [
+        "column 1",
+        "columns 2",
+        "columns 3"
+      ]
+    },
+    "layout": {
+      "type": "dynamiczone",
+      "components": [
+        "pages-component.column-1",
+        "pages-component.column-2",
+        "pages-component.column-3"
+      ]
+    },
+    "layouttest": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::layouttest.layouttest",
+      "inversedBy": "page"
+    }
+  }
+}

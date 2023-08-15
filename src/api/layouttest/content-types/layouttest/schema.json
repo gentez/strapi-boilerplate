@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "layouttests",
+  "info": {
+    "singularName": "layouttest",
+    "pluralName": "layouttests",
+    "displayName": "layouttest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "layout": {
+      "type": "string"
+    },
+    "column_number": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.column-1"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page",
+      "mappedBy": "layouttest"
+    }
+  }
+}

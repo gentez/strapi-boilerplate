@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_pages_component_sidebars",
+  "info": {
+    "displayName": "sidebar",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "placeleft": {
+      "type": "boolean"
+    }
+  }
+}
