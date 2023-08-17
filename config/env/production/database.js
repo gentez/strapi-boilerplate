@@ -14,7 +14,7 @@ module.exports = ({ env }) => {
         database:"testdb_6qob",
         user:"admin",
         password:"Xs94O2TLfRkWwZWwND4dEXX1PBl1dske",
-        uri:"postgres://admin:Xs94O2TLfRkWwZWwND4dEXX1PBl1dske@dpg-cjf29dgcfp5c73f03d20-a/testdb_6qob",
+        uri:"postgres://admin:Xs94O2TLfRkWwZWwND4dEXX1PBl1dske@dpg-cjf29dgcfp5c73f03d20-a.oregon-postgres.render.com/testdb_6qob",
         ssl: { rejectUnauthorized: false },
       },
       debug: false,
