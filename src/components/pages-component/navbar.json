@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pages_component_navbars",
+  "info": {
+    "displayName": "navbar",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "navitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.menu"
+    },
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.logo"
+    }
+  }
+}

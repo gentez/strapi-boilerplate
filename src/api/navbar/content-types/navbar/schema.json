@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "navbars",
+  "info": {
+    "singularName": "navbar",
+    "pluralName": "navbars",
+    "displayName": "navbar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.menu"
+    },
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.logo"
+    }
+  }
+}

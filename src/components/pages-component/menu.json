@@ -2,11 +2,15 @@
   "collectionName": "components_pages_component_menus",
   "info": {
     "displayName": "menu",
-    "icon": "chartBubble"
+    "icon": "chartBubble",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
       "type": "string"
     }
   }

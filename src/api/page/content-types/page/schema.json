@@ -15,9 +15,6 @@
     "Title": {
       "type": "string"
     },
-    "Content": {
-      "type": "richtext"
-    },
     "slug": {
       "type": "uid",
       "targetField": "Title"
@@ -26,11 +23,6 @@
       "type": "component",
       "repeatable": false,
       "component": "pages-component.seo-setting"
-    },
-    "menuItems": {
-      "type": "component",
-      "repeatable": true,
-      "component": "pages-component.menu"
     },
     "sidebar": {
       "type": "component",
@@ -53,11 +45,20 @@
         "pages-component.column-3"
       ]
     },
-    "layouttest": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::layouttest.layouttest",
-      "inversedBy": "page"
+    "Navbar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.navbar"
+    },
+    "layout_test": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.column"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.footer"
     }
   }
 }

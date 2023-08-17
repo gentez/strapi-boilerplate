@@ -9,6 +9,12 @@
   "attributes": {
     "meta_title": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "json"
     }
   }
 }
