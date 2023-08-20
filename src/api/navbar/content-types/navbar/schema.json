@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "navbars",
   "info": {
     "singularName": "navbar",
@@ -21,6 +21,9 @@
       "type": "component",
       "repeatable": false,
       "component": "pages-component.logo"
+    },
+    "sitename": {
+      "type": "string"
     }
   }
 }

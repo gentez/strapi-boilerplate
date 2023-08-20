@@ -14,11 +14,6 @@
   "attributes": {
     "layout": {
       "type": "string"
-    },
-    "column_number": {
-      "type": "component",
-      "repeatable": true,
-      "component": "pages-component.column-1"
     }
   }
 }

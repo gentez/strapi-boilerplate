@@ -29,36 +29,20 @@
       "repeatable": false,
       "component": "pages-component.sidebar"
     },
-    "layoutOptions": {
-      "type": "enumeration",
-      "enum": [
-        "column 1",
-        "columns 2",
-        "columns 3"
-      ]
-    },
-    "layout": {
-      "type": "dynamiczone",
-      "components": [
-        "pages-component.column-1",
-        "pages-component.column-2",
-        "pages-component.column-3"
-      ]
-    },
-    "Navbar": {
-      "type": "component",
-      "repeatable": false,
-      "component": "pages-component.navbar"
-    },
-    "layout_test": {
-      "type": "component",
-      "repeatable": false,
-      "component": "pages-component.column"
+    "navbar": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navbar.navbar"
     },
     "footer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::footer.footer"
+    },
+    "columns": {
       "type": "component",
-      "repeatable": false,
-      "component": "pages-component.footer"
+      "repeatable": true,
+      "component": "pages-component.editor"
     }
   }
 }
