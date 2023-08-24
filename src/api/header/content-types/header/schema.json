@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "navs",
+  "collectionName": "headers",
   "info": {
-    "singularName": "nav",
-    "pluralName": "navs",
-    "displayName": "Nav"
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header"
   },
   "options": {
     "draftAndPublish": true
@@ -19,7 +19,7 @@
       "repeatable": false,
       "component": "pages-component.logo"
     },
-    "navitems": {
+    "headeritems": {
       "type": "component",
       "repeatable": true,
       "component": "pages-component.menu"

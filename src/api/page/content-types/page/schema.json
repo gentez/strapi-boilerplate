@@ -39,10 +39,10 @@
       "repeatable": true,
       "component": "pages-component.editor"
     },
-    "nav": {
+    "header": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::nav.nav"
+      "target": "api::header.header"
     }
   }
 }
