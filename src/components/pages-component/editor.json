@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_pages_component_editors",
+  "info": {
+    "displayName": "editor",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "editor": {
+      "type": "richtext"
+    },
+    "grid": {
+      "type": "integer",
+      "required": true,
+      "max": 12,
+      "min": 2
+    }
+  }
+}
