@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_resturant_collection_opening_hours",
+  "info": {
+    "displayName": "OpeningHours",
+    "icon": "house"
+  },
+  "options": {},
+  "attributes": {
+    "Days": {
+      "type": "string"
+    },
+    "Time": {
+      "type": "string"
+    }
+  }
+}
