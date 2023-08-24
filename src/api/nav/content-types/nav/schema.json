@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navs",
+  "info": {
+    "singularName": "nav",
+    "pluralName": "navs",
+    "displayName": "Nav"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sitename": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.logo"
+    },
+    "navitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.menu"
+    }
+  }
+}

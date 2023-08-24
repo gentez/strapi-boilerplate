@@ -29,11 +29,6 @@
       "repeatable": false,
       "component": "pages-component.sidebar"
     },
-    "navbar": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::navbar.navbar"
-    },
     "footer": {
       "type": "relation",
       "relation": "oneToOne",
@@ -43,6 +38,11 @@
       "type": "component",
       "repeatable": true,
       "component": "pages-component.editor"
+    },
+    "nav": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nav.nav"
     }
   }
 }
