@@ -9,10 +9,9 @@ const auth = require("@strapi/admin/server/services/auth");
 module.exports = createCoreController('api::page.page',({ strapi }) =>  ({
     // Method 1: Creating an entirely custom action
     async createAuthor(ctx) {
-      console.log("here")
+      
       try {
-        
-        const { firstname, lastname, email, password } = ctx.request.body;
+        const { firstName:firstname, lastName: lastname, email, password } = ctx.request.body;
         if (!firstname || !lastname || !email || !password) {
           // ctx.badRequest(message, details)
           return ctx.badRequest(`firstname, lastname, email and password are required fields`);
