@@ -12,8 +12,9 @@ module.exports = createCoreController('api::page.page',({ strapi }) =>  ({
       
       try {
         const { firstName:firstname, lastName: lastname, email, password } = ctx.request.body;
+
         if (!firstname || !lastname || !email || !password) {
-          // ctx.badRequest(message, details)
+          
           return ctx.badRequest(`firstname, lastname, email and password are required fields`);
         }
 

@@ -36,6 +36,14 @@ module.exports = ({ env }) => ({
                                 },
                             ],
                         },
+                        {
+                          title: "Divs",
+                          items: [
+                              { title: "Div", block: "div" },
+                              { title: "Section", block: "section" },
+
+                          ],
+                      },
                     ],
                     autosave_ask_before_unload: true,
                     autosave_interval: '30s',
@@ -104,6 +112,7 @@ module.exports = ({ env }) => ({
                     toolbar_mode: 'sliding',
                     contextmenu: 'link image table',
                     skin: 'oxide-dark',
+                    content_css: 'writer',
                     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:16px }'
                 },
             },
