@@ -8,6 +8,14 @@ module.exports = {
         config: {
           auth: false
         }
-      }
+      },
+      {
+        method: 'POST',
+        path: '/update-author',
+        handler: 'page.updateAuthor',
+        config: {
+          auth: false
+        }
+      },
     ]
   }
