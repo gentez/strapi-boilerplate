@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_seo_seo_settings",
+  "info": {
+    "displayName": "seo-setting",
+    "icon": "chartCircle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "meta_title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "json"
+    }
+  }
+}
