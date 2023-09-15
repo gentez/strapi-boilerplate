@@ -64,6 +64,9 @@ $RECYCLE.BIN/
 .tmp
 *.log
 *.sql
+*.sqlite
+*.sqlite3
+
 !.github/workflows/db/**/*.sql
 *.sqlite
 
@@ -72,6 +75,11 @@ $RECYCLE.BIN/
 ############################
 
 *#
+ssl
+.idea
+nbproject
+public/uploads/*
+!public/uploads/.gitkeep
 .idea
 nbproject
 .eslintcache
@@ -97,6 +105,21 @@ package-lock.json
 # Tests
 ############################
 
+testApp
+coverage
+
+############################
+# Strapi
+############################
+
+.env
+license.txt
+exports
+*.cache
+dist
+build
+.strapi-updater.json
+package-lock.json
 test-apps
 coverage
 
