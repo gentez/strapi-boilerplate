@@ -148,6 +148,29 @@ module.exports = ({ env }) => ({
                         </div>
                         `,
             },
+            {
+              title: 'Hero',
+              description: 'A hero section',
+              content: `<div class="mceTmpl">
+              <section class="dark:bg-gray-800 dark:text-gray-100 bg-neutral-900 m-3">
+  <div class="container grid grid-cols-1 gap-8 mx-auto sm:grid-cols-2 sm:py-6 lg:py-6">
+    <div class="flex flex-col justify-center p-6 text-center sm:text-left rounded-sm lg:max-w-md xl:max-w-lg">
+      <h1 class="text-5xl font-bold leading-none sm:text-6xl">JAALN<span class='text-orange-600'>E</span>T</h1>
+      <small class="mt-2 mb-8 text-lg sm:mb-12 text-orange-600">
+      Success| Powered By Relationships.
+      </small>
+      <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+        <Link rel="noopener noreferrer" href="/pages/about" class="px-8 py-3 text-lg font-semibold rounded border-warmGray-50 bg-orange-500  hover:bg-orange-400">About JN</Link>
+      </div>
+    </div>
+    <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 order-first sm:order-none">
+      <img src="image/wrap.jpg" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"/>
+    </div>
+
+  </div>
+</section>
+              </div>`
+            }
           ],
           extended_valid_elements: [
             'input[id="dummyInput"|name|value|type|class|style|required|placeholder|autocomplete|onclick]',
