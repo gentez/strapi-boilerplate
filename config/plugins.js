@@ -1,4 +1,3 @@
-// plugins.js
 module.exports = ({ env }) => ({
   tinymce: {
     enabled: true,
@@ -121,6 +120,218 @@ module.exports = ({ env }) => ({
               content:
                 '<div class="card bg-red text-white"><Link href="https://example.com">Link Text</Link></div>',
             },
+            {
+              title: 'Projects ',
+              description: 'A Projects',
+              content:
+                `<div class="mceTmpl">
+                <div class="container mt-11 ">
+                <div class="flex flex-row justify-between px-10">
+                  <div>
+                    <h1 class="text-4xl  font-bold ">Discover our Projects</h1>
+                    <p class="w-1/2">
+                      Our success in creating business solutions is due in large part to
+                      our talented and highly committed team.
+                    </p>
+                  </div>
+                  <div class="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0 lg:justify-start">
+                    <a
+                      rel="noopener noreferrer"
+                      href="#"
+                      class="rounded border-warmGray-50 bg-orange-500 px-8 py-3 text-lg font-semibold  hover:bg-orange-400"
+                    >
+                      View All
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="py-10">
+                  <div class="container mx-auto">
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                      <div class="group fixed bottom-0 left-0 right-0 top-0 z-20 hidden h-full w-full cursor-pointer bg-black bg-opacity-50">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                          <p class="text-center text-lg font-semibold text-white">
+                            Title Here
+                          </p>
+                        </div>
+                      </div>
+                      <div class="transform overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 ease-in-out hover:scale-110">
+                        <img
+                          src="image/Project.jpg"
+                          alt="Image 1"
+                          class="h-48 w-full object-cover"
+                        />
+                      </div>
+          
+                      <div class="transform overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 ease-in-out hover:scale-110">
+                        <img
+                          src="image/Project.jpg"
+                          alt="Image 1"
+                          class="h-48 w-full object-cover"
+                        />
+                      </div>
+                      <div class="transform overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 ease-in-out hover:scale-110">
+                        <img
+                          src="image/Project.jpg"
+                          alt="Image 1"
+                          class="h-48 w-full object-cover"
+                        />
+                      </div>
+                      <div class="transform overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 ease-in-out hover:scale-110">
+                        <img
+                          src="image/Project.jpg"
+                          alt="Image 1"
+                          class="h-48 w-full object-cover"
+                        />
+                      </div>
+                      <div class="transform overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 ease-in-out hover:scale-110">
+                        <img
+                          src="image/Project.jpg"
+                          alt="Image 2"
+                          class="h-48 w-full object-cover"
+                        />
+                      </div>
+          
+                      <div class="transform overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 ease-in-out hover:scale-110">
+                        <img
+                          src="image/Project.jpg"
+                          alt="Image 3"
+                          class="h-48 w-full object-cover"
+                        />
+                      </div>
+                      <div class="transform overflow-hidden rounded-lg bg-white shadow-md transition-transform duration-300 ease-in-out hover:scale-110">
+                        <img
+                          src="image/Project.jpg"
+                          alt="Image 4"
+                          class="h-48 w-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div></div>`,
+            },
+            {
+              title: 'Services ',
+              description: 'Services Card',
+              content:
+                `<div class="mceTmpl">
+                <div class="mt-10 py-10 ">
+                <div class="container mx-auto">
+                  <div class="flex flex-row justify-between px-10 py-10">
+                    <div>
+                      <h1 class="text-4xl  font-bold ">Build A Future Strategy!</h1>
+                      <p class="w-1/2">
+                        Our success in creating business solutions is due in large part to
+                        our talented and highly committed team.
+                      </p>
+                    </div>
+                    <div class="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0 lg:justify-start">
+                      <a
+                        rel="noopener noreferrer"
+                        href="#"
+                        class="rounded border-warmGray-50 bg-orange-500 px-8 py-3 text-lg font-semibold  hover:bg-orange-400"
+                      >
+                        View All
+                      </a>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="wrapper text-gray-900 antialiased">
+                      <div>
+                        <img
+                          src="image/servics.jpg"
+                          alt=" random imgee"
+                          class="w-full rounded-lg object-cover object-center shadow-md"
+                        />
+          
+                        <div class="relative -mt-16 px-4  ">
+                          <div class="rounded-lg bg-white p-6 shadow-lg">
+                            <div class="flex items-baseline"></div>
+                            <AiOutlineMessage size={70} />
+          
+                            <h4 class="mt-1 truncate text-xl font-semibold uppercase leading-tight">
+                              Web development
+                            </h4>
+                            <div class="mt-4">
+                              <span class="text-md font-semibold text-teal-600">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consequatur eius animi fugiat!
+                              </span>
+                              <span class="text-sm text-gray-600">
+                                (based on 234 ratings)
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper text-gray-900 antialiased">
+                      <div>
+                        <img
+                          src="image/service2.jpg"
+                          alt=" random imgee"
+                          class="w-full rounded-lg object-cover object-center shadow-md"
+                        />
+          
+                        <div class="relative -mt-16 px-4  ">
+                          <div class="rounded-lg bg-white p-6 shadow-lg">
+                            <div class="flex items-baseline"></div>
+                            <BiAnalyse size={70} />
+          
+                            <h4 class="mt-1 truncate text-xl font-semibold uppercase leading-tight">
+                              Data Analytics
+                            </h4>
+                            <div class="mt-4">
+                              <span class="text-md font-semibold text-teal-600">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consequatur eius animi fugiat!
+                              </span>
+                              <span class="text-sm text-gray-600">
+                                (based on 234 ratings)
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="wrapper text-gray-900 antialiased">
+                      <div>
+                        <img
+                          src="image/service3.jpg"
+                          alt=" random imgee"
+                          class="w-full rounded-lg object-cover object-center shadow-md"
+                        />
+          
+                        <div class="relative -mt-16 px-4  ">
+                          <div class="rounded-lg bg-white p-6 shadow-lg">
+                            <div class="flex items-baseline"></div>
+                            <BiMedal size={70} />
+          
+                            <h4 class="mt-1 truncate text-xl font-semibold uppercase leading-tight">
+                              User Interface
+                            </h4>
+                            <div class="mt-4">
+                              <span class="text-md font-semibold text-teal-600">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consequatur eius animi fugiat!
+                              </span>
+                              <span class="text-sm text-gray-600">
+                                (based on 234 ratings)
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+             
+              </div>`,
+            },
+            
             {
               title: 'FAQS',
               description: 'A frequently asked questions section',
