@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pages_component_faqs",
+  "info": {
+    "displayName": "FAQS",
+    "icon": "arrowDown"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text",
+      "required": true
+    },
+    "answer": {
+      "type": "text",
+      "unique": true
+    }
+  }
+}

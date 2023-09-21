@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_pages_component_menus",
+  "info": {
+    "displayName": "menu",
+    "icon": "chartBubble",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
