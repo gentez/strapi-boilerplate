@@ -43,6 +43,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::nav.nav"
+    },
+    "Faqs": {
+      "displayName": "FAQS",
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.faqs"
     }
   }
 }

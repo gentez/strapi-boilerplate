@@ -369,33 +369,41 @@ module.exports = ({ env }) => ({
             {
               title: 'Hero',
               description: 'A hero section',
-              content: `<div class="mceTmpl dark:bg-gray-800 text-black bg-dark-orange>
-              <section>
-  <div class="container grid grid-cols-1 gap-8 mx-auto sm:grid-cols-2 sm:py-6 lg:py-6">
-    <div class="flex flex-col justify-center p-6 text-center sm:text-left rounded-sm lg:max-w-md xl:max-w-lg">
-      <h1 class="text-5xl font-bold leading-none sm:text-6xl">JAALNET</h1>
-      <small class="mt-2 mb-8 text-lg sm:mb-12 text-white">
-      Success| Powered By Relationships.
-      </small>
-      <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-      <a 
-  rel="noopener noreferrer" 
-  href="/pages/about" 
-  class="px-8 py-3 text-lg font-semibold rounded border-warmGray-50 bg-black text-orange-500 transition duration-300 ease-in-out hover:shadow-lg hover:bg-neutral-900"
->About JN</a>
-      </div>
-    </div>
-    <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 order-first sm:order-none">
-    <img 
-  src="image/wrap.jpg" 
-  alt="" 
-  class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 shadow-lg transform hover:scale-105 transition duration-300 border-none"
-/>
-
-    </div>
-
-  </div>
-</section>
+              content: `<div class="mceTmpl>
+              <div className="overflow-hidden bg-black pt-[82px] sm:-mx-[250px] sm:rounded-b-[50%] lg:-mx-[150px] lg:pt-[106px]">
+                <div className="relative">
+                    <img src="/assets/images/banner-lefticon.png" alt="banner-lefticon" className="absolute left-0 top-20 sm:left-[250px] lg:left-[150px]" />
+                    <img
+                        src="/assets/images/banner-rightIcon.png"
+                        alt="banner-rightIcon"
+                        className="absolute right-0 -top-4 sm:right-[250px] lg:right-[150px]"
+                    />
+                    <div className="container">
+                        <div className="relative bg-[url(/assets/images/world-map.png)] bg-cover bg-top bg-no-repeat pt-14 pb-0 lg:pt-20 lg:pb-60 xl:pt-36">
+                            <div className="relative z-[1] text-center text-white lg:w-3/5 ltr:lg:text-left rtl:lg:text-right xl:w-1/2">
+                                <h2 className="text-4xl font-extrabold leading-normal sm:text-5xl lg:text-[70px] lg:leading-[90px] ">
+                                    Make your <span className="italic text-primary">team</span> <span className="italic text-secondary">work</span> together
+                                </h2>
+                                <p className="my-8 text-lg lg:w-[90%] ">
+                                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.
+                                </p>
+                                <Link href="/about-us" className="btn mx-auto mt-2 block w-fit bg-white lg:mx-0 lg:rtl:ml-auto">
+                                    read more
+                                </Link>
+                            </div>
+                            <div
+                                className="bottom-0 mx-auto mt-5 mb-2 w-auto ltr:right-0 rtl:left-0 md:w-[540px] lg:absolute lg:mb-0 lg:mt-0 xl:w-[650px]"
+                                data-aos={isRtl ? 'fade-right' : 'fade-left'}
+                                data-aos-duration="1000"
+                                data-aos-offset="0"
+                                data-aos-delay="200"
+                            >
+                                <img src="/assets/images/home-banner-icon.svg" alt="home-banner-icon" className="rtl:rotate-y-180" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
               </div>`
             }
           ],
