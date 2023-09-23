@@ -2,17 +2,25 @@
   "collectionName": "components_pages_component_faqs",
   "info": {
     "displayName": "FAQS",
-    "icon": "arrowDown"
+    "icon": "arrowDown",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "question": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "answer": {
       "type": "text",
-      "unique": true
+      "unique": false,
+      "required": false
+    },
+    "grid": {
+      "type": "integer",
+      "max": 12,
+      "min": 2,
+      "default": 4
     }
   }
 }
