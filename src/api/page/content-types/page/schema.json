@@ -34,21 +34,21 @@
       "relation": "oneToOne",
       "target": "api::footer.footer"
     },
-    "columns": {
-      "type": "component",
-      "repeatable": true,
-      "component": "pages-component.editor"
-    },
     "nav": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::nav.nav"
     },
-    "Faqs": {
-      "displayName": "FAQS",
+    "Section": {
       "type": "component",
       "repeatable": true,
-      "component": "pages-component.faqs"
+      "component": "pages-component.section"
+    },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner",
+      "inversedBy": "page"
     }
   }
 }

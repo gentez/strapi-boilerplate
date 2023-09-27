@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_pages_component_sections",
+  "info": {
+    "displayName": "Section",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "column_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.column-card"
+    },
+    "column_html": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.column-html"
+    },
+    "column_accordion": {
+      "displayName": "column-accordion",
+      "type": "component",
+      "repeatable": false,
+      "component": "pages-component.column-accordion"
+    }
+  }
+}

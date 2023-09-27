@@ -1,20 +1,20 @@
 {
-  "collectionName": "components_pages_component_editors",
+  "collectionName": "components_pages_component_column_htmls",
   "info": {
-    "displayName": "Column",
-    "icon": "layout",
+    "displayName": "column-html",
+    "icon": "code",
     "description": ""
   },
   "options": {},
   "attributes": {
+    "editor": {
+      "type": "richtext"
+    },
     "grid": {
       "type": "integer",
       "required": true,
       "max": 12,
       "min": 2
-    },
-    "Html": {
-      "type": "richtext"
     }
   }
 }
