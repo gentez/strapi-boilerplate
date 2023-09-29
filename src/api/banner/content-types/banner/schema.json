@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "editor": {
+      "type": "richtext"
+    },
+    "grid": {
+      "type": "integer",
+      "required": true,
+      "max": 12,
+      "min": 2,
+      "default": 12
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page",
+      "mappedBy": "banner"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pages_component_column_accordions",
+  "info": {
+    "displayName": "column-accordion",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "accordion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.accordion"
+    },
+    "grid": {
+      "type": "integer",
+      "required": true,
+      "max": 12,
+      "min": 2
+    }
+  }
+}

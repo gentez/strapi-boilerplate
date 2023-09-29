@@ -17,5 +17,10 @@ module.exports = {
           auth: false
         }
       },
+      {
+        method: 'GET',
+        path: '/pageData/:slug',
+        handler: 'page.getPageData',
+      }
     ]
   }

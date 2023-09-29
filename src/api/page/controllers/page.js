@@ -96,6 +96,19 @@ module.exports = createCoreController('api::page.page',({ strapi }) =>  ({
           console.log(err)
           return ctx.internalServerError(err.message)
         }
+    },
+    async getPageData(ctx) {
+      try {
+        const { slug } = ctx.params;
+        const response = await strapi.entityService.findMany('api::page.page',{
+          filters:{
+            slug: slug
+          },
+          populate:['Section',"Section.column_html","Section.column_card","Section.column_accordion","Section.column_accordion.accordion" ,'nav','nav.logo','nav.navitems',"seo","footer.icons","footer.footerlinks","footer.column","banner"],
+        });
+        ctx.body = response[0];
+      } catch (err) {
+        return ctx.internalServerError(err.message)
+      }
     }
-  
   }));
