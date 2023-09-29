@@ -17,6 +17,11 @@
       "repeatable": true,
       "component": "pages-component.column-html"
     },
+    "column_image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.column-image"
+    },
     "column_accordion": {
       "displayName": "column-accordion",
       "type": "component",

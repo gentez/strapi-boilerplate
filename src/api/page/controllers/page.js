@@ -104,7 +104,7 @@ module.exports = createCoreController('api::page.page',({ strapi }) =>  ({
           filters:{
             slug: slug
           },
-          populate:['Section',"Section.column_html","Section.column_card","Section.column_accordion","Section.column_accordion.accordion" ,'nav','nav.logo','nav.navitems',"seo","footer.icons","footer.footerlinks","footer.column","banner"],
+          populate:['Section',"Section.column_html","Section.column_image","Section.column_image.image","Section.column_card","Section.column_accordion","Section.column_accordion.accordion" ,'nav','nav.logo','nav.logo.logoimage','nav.navitems',"seo","footer.icons","footer.footerlinks","footer.column","banner"],
         });
         ctx.body = response[0];
       } catch (err) {
