@@ -49,6 +49,11 @@
       "relation": "oneToOne",
       "target": "api::banner.banner",
       "inversedBy": "page"
+    },
+    "column_slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.column-slider"
     }
   }
 }
