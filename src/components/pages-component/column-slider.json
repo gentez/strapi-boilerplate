@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_pages_component_column_sliders",
+  "info": {
+    "displayName": "Column-slider",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "slider_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pages-component.slider"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

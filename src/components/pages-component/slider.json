@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_pages_component_sliders",
+  "info": {
+    "displayName": "slider",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
