@@ -51,12 +51,6 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "resturant"
-    },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "mappedBy": "resturants"
     }
   }
 }
