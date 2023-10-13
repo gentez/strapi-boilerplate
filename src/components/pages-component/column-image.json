@@ -2,25 +2,39 @@
   "collectionName": "components_pages_component_column_images",
   "info": {
     "displayName": "column-image",
-    "icon": "folder"
+    "icon": "folder",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "grid": {
+    "lg": {
       "type": "integer",
       "required": true,
       "max": 12,
       "min": 2
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "sm": {
+      "type": "integer",
+      "max": 12,
+      "min": 2,
+      "required": false
+    },
+    "md": {
+      "type": "integer",
+      "max": 12,
+      "min": 2,
+      "required": false
     }
   }
 }
