@@ -22,6 +22,10 @@
       "repeatable": true,
       "component": "pages-component.column-image"
     },
+    "section_name": {
+      "type": "string",
+      "unique": false
+    },
     "column_accordion": {
       "displayName": "column-accordion",
       "type": "component",

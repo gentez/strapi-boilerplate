@@ -20,9 +20,21 @@
         "audios"
       ]
     },
-    "grid": {
+    "lg": {
       "type": "integer",
       "required": true,
+      "max": 12,
+      "min": 2
+    },
+    "sm": {
+      "type": "integer",
+      "required": false,
+      "max": 12,
+      "min": 2
+    },
+    "md": {
+      "type": "integer",
+      "required": false,
       "max": 12,
       "min": 2
     }
