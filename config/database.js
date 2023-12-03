@@ -91,20 +91,37 @@
 //   };
 // };
     // strapi-api/config/database.js
+    // module.exports = ({ env }) => ({
+    //   connection: {
+    //     client: 'postgres',
+    //     connection: {
+    //       // connectionString: env('DATABASE_URL',"postgres://host=devmarketplace-strapi.cpsih1xiv3b8.ap-southeast-2.rds.amazonaws.com port=5432 dbname=devmarketplace user=jaalnet password=jaalnet12345 sslmode=false connect_timeout=10"),
+    //       host: env('DATABASdpg-cjf29dgcfp5c73f03d20-aE_HOST', 'jaalnet-strapi.cpsih1xiv3b8.ap-southeast-2.rds.amazonaws.com'),
+    //       port: env.int('DATABASE_PORT', 5432),
+    //       database: env('DATABASE_NAME', 'jaalnet-strapi'),
+    //       user: env('DATABASE_USERNAME', 'strapiadmin'),
+    //       password: env('DATABASE_PASSWORD', 'strapiadmin12345'),
+    //       ssl: {
+    //         rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
+    //       },
+    //     },
+    //     debug: false,
+    //   },
+    // });
+
     module.exports = ({ env }) => ({
       connection: {
-        client: 'postgres',
+        client: "postgres",
         connection: {
-          connectionString: env('DATABASE_URL',"postgres://admin:Xs94O2TLfRkWwZWwND4dEXX1PBl1dske@dpg-cjf29dgcfp5c73f03d20-a.oregon-postgres.render.com/testdb_6qob"),
-          host: env('DATABASdpg-cjf29dgcfp5c73f03d20-aE_HOST', 'localhost'),
-          port: env.int('DATABASE_PORT', 5432),
-          database: env('DATABASE_NAME', 'testdb_6qob'),
-          user: env('DATABASE_USERNAME', 'admin'),
-          password: env('DATABASE_PASSWORD', 'Xs94O2TLfRkWwZWwND4dEXX1PBl1dske'),
+          host: env("DATABASE_HOST", "jaalnet-strapi.cpsih1xiv3b8.ap-southeast-2.rds.amazonaws.com"),
+          port: env.int("DATABASE_PORT", 5432),
+          database: env("DATABASE_NAME", "jaalnetstrapi"),
+          user: env("DATABASE_USERNAME", "strapiadmin"),
+          password: env("DATABASE_PASSWORD", "strapiadmin12345"),
           ssl: {
             rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
           },
         },
-        debug: false,
+        useNullAsDefault: true,
       },
     });
